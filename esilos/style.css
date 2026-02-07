@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family:"Open Sans", sans-serif; ;
+    font-family:"Open Sans", sans-serif; 
 }
 
 h1{
@@ -20,3 +20,37 @@ p{
     line-height:1.6 ;
     margin: 10px;
 }
+
+.calculadora{
+    display: flex;
+    ale
+}
+
+div.calculadorImc{
+    margin: 20px;
+}
+
+#peso{
+    height: 25px;
+    border-radius: 10px;
+}
+
+#altura{
+    height: 25px;
+    border-radius: 10px;
+}
+
+div.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: start;  
+}
+
+button{
+    width: 65px;
+    height: 30px;
+    margin: 15px;
+    border-radius:10px ;
+}
+
+

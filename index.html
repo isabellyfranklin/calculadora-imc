@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <LINk:favicon></LINk:favicon>
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="esilos/style.css">
 </head>
@@ -13,8 +12,28 @@
     <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores</p>
     <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
 
+    <div class="calculadora">
 
-    <button onclick="calcular()">Calcular</button>
-    <button onclick="limpar()">Limpar</button>
+        <div class="calculadorImc">
+        <label for="altura">Altura
+            <input type="number" id="altura">
+        </label>
+        <label for="peso">Peso
+            <input type="number" id="peso">
+        </label>
+        </div>
+        
+        <div class="botoes">
+        <button id="calculador" onclick="calcular()">Calcular</button>
+        
+        <button onclick="limpar()">Limpar</button>
+        </div>
+
+        <output id="resultado">Seu imc</output>
+        
+
+    </div>
+
+    <script src="calculo.js"></script>
 </body>
 </html>
