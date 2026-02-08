@@ -9,48 +9,89 @@
 }
 
 body{
+    background-color:rgb(255, 255, 255);
     font-family:"Open Sans", sans-serif; 
+    margin: 40px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
+    color: rgb(169, 169, 169);
+    margin: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 60px;
+}
+
+main{
+   
+    background-color: blueviolet;
+    width: 700px;
+    height: 600px;
+    border-radius: 25px 25px 25px;
+}
+
+div.campo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+div.campo label{
+    width: 250px;
+    font-weight: bolder;
+    margin-left: 35px;
+}
+
+
+input{
     margin: 15px;
 }
 
-p{
-    line-height:1.6 ;
-    margin: 10px;
-}
-
-.calculadora{
-    display: flex;
-    ale
-}
-
-div.calculadorImc{
-    margin: 20px;
-}
-
 #peso{
-    height: 25px;
-    border-radius: 10px;
+    width: 370px;
+    height: 50px;
+    border-radius: 0 solid black;
 }
 
 #altura{
-    height: 25px;
-    border-radius: 10px;
+    width: 370px;
+    height: 50px;
+    border-radius: 0;
 }
 
 div.botoes{
     display: flex;
-    flex-direction: row;
-    align-items: start;  
+    align-items: end;
+
+    justify-content: flex-end;
+    width: 623px;
 }
 
 button{
-    width: 65px;
-    height: 30px;
-    margin: 15px;
-    border-radius:10px ;
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 20px;
 }
+
+output{
+    width: 250px;
+    background-color: brown;
+    margin: 45px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 
 
