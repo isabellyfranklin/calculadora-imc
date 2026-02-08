@@ -3,14 +3,22 @@ function calcular(){
     const altura = document.getElementById("altura")
     const resultado = document.getElementById("resultado")
 
-    let pesoImc = parseFloat(peso.value)
-    let alturaCenti = parseFloat(altura.value)
+    let pesoImc = Number(peso.value)
+    let alturaImc = Number(altura.value)
 
-    //tranforamndo altura de centrimento para metro
-    let alturaM = alturaCenti / 100
+    if(!pesoImc || !alturaImc){
+        resultado.innerHTML = "Prencha os campos"  
+        return
+    }
 
-    let seuImc = pesoImc  / (alturaM ** 2)
+    // se o usuario digitar 165 ou 176, vai tras formar em 1.65 ou 1.76
+    // se a altura for maior que 3, assume que está em centímetros e converte para metros
+    if(alturaImc > 3){
+       alturaImc = alturaImc / 100
+    }
 
-    resultado.innerHTML = `seu imc é:"  ${seuImc.toFixed(2)}`
+    let seuImc = pesoImc  / (alturaImc ** 2)
+
+    resultado.innerHTML = `Seu IMC é: <span style="color: #43828b;">${seuImc.toFixed(3)}</span>`
   
 }

@@ -10,29 +10,27 @@
     <h1>Calculadora IMC</h1>
     
     <main>
-        <div class="campo">
-            <label for="altura">Altura  (m)</label>
-            <input type="number" id="altura">
-        </div>
-        <div class="campo">
-            <label for="peso">Peso (kg)</label>
-            <input type="number" id="peso">
-        </div>
-        <div class="botoes">
-            <div class="botao01">
-                <button
-                 id="calculador" onclick="calcular()">Calcular
-                </button>
+       
+        <div class="corpo-calc">
+            <div class="campo">
+                <label for="altura">Altura  (m)</label>
+                <input type="number" id="altura" required placeholder="Ex: 1.65 ou 165" min="3">
             </div>
-        
-            <div class="botao02">
-                <button
-                 onclick="limpar()">Limpar
-                </button>
+            <div class="campo">
+                <label for="peso">Peso (kg)</label>
+                <input type="number" id="peso" required placeholder="Ex: 60" min="2" max="3">
             </div>
-        
+
+            <div class="botoes">
+                <div class="botao01">
+                    <button id="calculador" onclick="calcular()">Calcular</button>
+                </div>
+                <div class="botao02">
+                    <button onclick="limpar()">Limpar</button>
+                </div>
+            </div>
+             <output id="resultado">Seu IMC é: </output>
         </div>
-         <output id="resultado">Seu imc</output>
     </main>
 
 

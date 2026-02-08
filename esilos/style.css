@@ -20,19 +20,26 @@ body{
 }
 
 h1{
-    color: rgb(169, 169, 169);
+    color: rgb(0, 0, 0);
     margin: 15px;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: bolder;
     margin-right: 60px;
 }
 
 main{
-   
-    background-color: blueviolet;
-    width: 700px;
-    height: 600px;
+    background-color: rgb(231, 231, 231);
+    width: 600px;
+    height: 500px;
     border-radius: 25px 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+div.corpo-calc{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 50px;
 }
 
 div.campo{
@@ -42,7 +49,7 @@ div.campo{
 }
 
 div.campo label{
-    width: 250px;
+    width: 150px;
     font-weight: bolder;
     margin-left: 35px;
 }
@@ -50,6 +57,7 @@ div.campo label{
 
 input{
     margin: 15px;
+    
 }
 
 #peso{
@@ -66,24 +74,42 @@ input{
 
 div.botoes{
     display: flex;
-    align-items: end;
+    flex-flow: column;
+    align-items: center;
 
     justify-content: flex-end;
     width: 623px;
 }
 
 button{
-    width: 100px;
+    width: 500px;
     height: 50px;
-    margin-left: 10px;
-    border-radius: 20px;
+    margin: 5px;
+    border: 1px solid #49a0ae;
+    border-radius: 20px ;
+    background-color: #49a0ae;
+
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+
+button:hover{
+    background-color:  #43828b;
+    border: 1px solid  #43828b;
+    cursor: pointer;
 }
 
 output{
-    width: 250px;
-    background-color: brown;
-    margin: 45px;
+    width: 390px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 15px;
     text-align: center;
+    color: black;
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 
