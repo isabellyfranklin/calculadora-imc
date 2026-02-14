@@ -29,7 +29,7 @@ h1{
 
 main{
     background-color: rgb(46, 44, 44);
-    width: 500px;
+    width: 390px;
     height: 550px;
     border-radius: 25px 25px 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -50,11 +50,10 @@ div.campo{
 }
 
 div.campo label{
-    width: 150px;
+    width: 90px;
     font-weight: bolder;
     margin-left: 35px;
 }
-
 
 input{
     margin: 15px;
@@ -84,7 +83,7 @@ div.botoes{
 }
 
 button{
-    width: 450px;
+    width: 350px;
     height: 50px;
     margin: 5px;
     border: 1px solid #1f30ca;
@@ -103,7 +102,7 @@ button:hover{
 }
 
 output{
-    width: 390px;
+    width: 290px;
     height: 140px;
     border-radius: 15px;
     background-color: #1f30ca;
@@ -129,17 +128,5 @@ div.letra-resultado{
     margin-top: 20px;
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
