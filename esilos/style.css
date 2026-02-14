@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(68, 65, 65);
     font-family:"Open Sans", sans-serif; 
     margin: 40px;
 
@@ -28,7 +28,7 @@ h1{
 }
 
 main{
-    background-color: rgb(231, 231, 231);
+    background-color: black;
     width: 600px;
     height: 550px;
     border-radius: 25px 25px 25px;
@@ -85,9 +85,9 @@ button{
     width: 500px;
     height: 50px;
     margin: 5px;
-    border: 1px solid #49a0ae;
+    border: 1px solid #4953ae;
     border-radius: 20px ;
-    background-color: #49a0ae;
+    background-color: #4953ae;
 
     font-weight: lighter;
     font-size: 16px;
@@ -95,8 +95,8 @@ button{
 
 
 button:hover{
-    background-color:  #43828b;
-    border: 1px solid  #43828b;
+    background-color:   #4b5adf;
+    border: 1px solid   #4b5adf;
     cursor: pointer;
 }
 
@@ -111,6 +111,17 @@ output{
     font-size: 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
+div.letras-botoes{
+    font-size: 15px;
+    color: white;
+}
+
+div.letras-label{
+    font-size: 18px;
+    color: white;
+}
+
 
 
 
