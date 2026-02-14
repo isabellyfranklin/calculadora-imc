@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color:rgb(68, 65, 65);
+    background-color:black;
     font-family:"Open Sans", sans-serif; 
     margin: 40px;
 
@@ -20,7 +20,7 @@ body{
 }
 
 h1{
-    color: rgb(0, 0, 0);
+    color: #1f30ca;
     margin: 15px;
     font-size: 30px;
     font-weight: bolder;
@@ -28,12 +28,12 @@ h1{
 }
 
 main{
-    background-color: black;
+    background-color: rgb(68, 65, 65);
     width: 600px;
     height: 550px;
     border-radius: 25px 25px 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
+    
 
 div.corpo-calc{
     display: flex;
@@ -85,9 +85,9 @@ button{
     width: 500px;
     height: 50px;
     margin: 5px;
-    border: 1px solid #4953ae;
+    border: 1px solid #1f30ca;
     border-radius: 20px ;
-    background-color: #4953ae;
+    background-color: #1f30ca;
 
     font-weight: lighter;
     font-size: 16px;
