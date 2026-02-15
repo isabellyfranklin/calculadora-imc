@@ -54,6 +54,11 @@ function calcular(){
     }     
     
  function limpar(){
-    input = " "
-    resultado.innerHTML = " "
+    const peso = document.getElementById("peso")
+    const altura = document.getElementById("altura")
+    const resultado = document.getElementById("resultado")
+
+    peso.value = ""
+    altura.value = ""
+    resultado.innerHTML = "Seu IMC é:"
 }

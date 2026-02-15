@@ -7,7 +7,7 @@
     
     <link rel="stylesheet" href="style.css" media="screen and (min-width: 1280px) and (max-width: 1920px)">
 
-    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 765px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 765px) and (max-width: 1223px)">
 
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 764px)">
     
@@ -18,20 +18,20 @@
        
         <div class="corpo-calc">
             <div class="campo">
-                <label for="altura"><div class="letras-label">Altura  (m)</div></label>
+                <label for="altura" class="letras-label">Altura  (m)</label>
                 <input type="number" id="altura" required placeholder="Ex: 1.65 ou 165" >
             </div>
             <div class="campo">
-                <label for="peso"><div class="letras-label">Peso (kg)</div></label>
+                <label for="peso" class="letras-label">Peso (kg)</label>
                 <input type="number" id="peso" required placeholder="Ex: 60" >
             </div>
 
             <div class="botoes">
                 <div class="botao01">
-                    <button id="calculador" onclick="calcular()"><div class="letras-botoes">Calcular</div></button>
+                    <button id="calculador" onclick="calcular()" class="letras-botoes">Calcular</button>
                 </div>
                 <div class="botao02">
-                    <button onclick="limpar()"><div class="letras-botoes">Limpar</div></button>
+                    <button onclick="limpar()" class="letras-botoes">Limpar</button>
                 </div>
             </div>
              <output id="resultado"><div class="letra-resultado">Seu IMC é: </div></output>
