@@ -7,7 +7,7 @@ function calcular(){
     let alturaImc = Number(altura.value)
 
     if(!pesoImc || !alturaImc){
-        resultado.innerHTML = "Preencha os campos"  
+        resultado.innerHTML = "<span style= ` color: #fff; `  >Preencha os campos</span>"  
         return
     }
 
@@ -20,35 +20,35 @@ function calcular(){
     let seuImc = pesoImc  / (alturaImc ** 2)
 
     if (seuImc <= 16.9 ) {
-        resultado.innerHTML = `<span style=" color: #fff; margin-top: 20px; " >Seu IMC é:</span> <span style="color: #ca2c2c;">${seuImc.toFixed(3)}</span> 
+        resultado.innerHTML = `<span style="  color: #fff;   " >Seu IMC é:</span> <span style="color: #ca2c2c;">${seuImc.toFixed(3)}</span> 
         <br>
-        <span style=" color: #fff; ;font-size:20px; font-weight:bolder; margin-bottom:15px ;">Muito abaixo do peso</span>`
+        <span style=" color: #fff; ;font-size:20px; font-weight:bolder; margin-bottom:15px ;">Muito abaixo do peso</span> `
     } else if(seuImc >= 17 && seuImc <= 18.4){
-        resultado.innerHTML = `<span style=" color: #fff; margin-top: 20px; " >Seu IMC é:</span>  <span style="color:#ca2c2c;">${seuImc.toFixed(3)}</span> 
+        resultado.innerHTML = `<span style=" color: #fff; " >Seu IMC é:</span>  <span style="color:#ca2c2c;">${seuImc.toFixed(3)}</span> 
         <br>
         <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-bottom:15px ;">Abaixo do peso</span>`
     } else if (seuImc >= 18.5 && seuImc <= 24.95){
-        resultado.innerHTML = `<span style=" color: #fff; margin-top: 20px; " >Seu IMC é:</span>  <span style="color:  #ca2c2c;">${seuImc.toFixed(3)}</span> <br>
+        resultado.innerHTML = `<span style=" color: #fff; " >Seu IMC é:</span>  <span style="color:  #ca2c2c;">${seuImc.toFixed(3)}</span> <br>
         <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-bottom:15px ;">Peso Normal</span> 
         <br>
         <span style=" color: #fff; font-size:13px; " >Parabéns! Você está dentro do peso adequado</span>`
     } else if (seuImc >= 25  && seuImc <= 29.9){
-        resultado.innerHTML = `<span style=" color: #fff; margin-top: 20px; " >Seu IMC é: </span> <span style="color: #ca2c2c;">${seuImc.toFixed(3)}</span> 
+        resultado.innerHTML = `<span style=" color: #fff;  " >Seu IMC é: </span> <span style="color: #ca2c2c;">${seuImc.toFixed(3)}</span> 
         <br>
-        <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-bottom:15px ;">Acima do peso</span> <br>
+        <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-top:15px ;">Acima do peso</span> 
         `
     }else if (seuImc >= 30  && seuImc <= 34.9){
-        resultado.innerHTML = `<span style=" color: #fff; margin-top: 20px; " >Seu IMC é :</span> <span style="color:  #ca2c2c;">${seuImc.toFixed(3)}</span> 
+        resultado.innerHTML = `<span style=" color: #fff;  " >Seu IMC é :</span> <span style="color:  #ca2c2c;">${seuImc.toFixed(3)}</span> 
         <br>
-        <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-bottom:15px ;">Obesidade Grau I</span> <br>`
+        <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-bottom:15px ;">Obesidade Grau I</span>`
     }else if (seuImc >= 35  && seuImc < 40){
-        resultado.innerHTML = `<span style=" color: #fff; margin-top: 20px; " >Seu IMC é: </span> <span style="color:  #ca2c2c;">${seuImc.toFixed(3)}</span>
+        resultado.innerHTML = ` <br> <span style=" color: #fff;  " >Seu IMC é: </span> <span style="color:  #ca2c2c;">${seuImc.toFixed(3)}</span>
          <br>
-        <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-bottom:15px ;">Obesidade Grau II</span> <br>`
+        <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-bottom:15px ;">Obesidade Grau II</span>`
     } else if (seuImc > 40) {
-        resultado.innerHTML = `<span style=" color: #fff; margin-top: 20px; " >Seu IMC é: </span> <span style="color:  #ca2c2c;">${seuImc.toFixed(3)}</span> 
+        resultado.innerHTML = ` <br> <span style=" color: #fff;  " >Seu IMC é: </span> <span style="color:  #ca2c2c;">${seuImc.toFixed(3)}</span> 
         <br>
-        <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-bottom:15px ;">Obesidade Grau III</span> <br>`
+        <span style=" color: #fff; font-size:20px; font-weight:bolder; margin-bottom:15px ;">Obesidade Grau III</span> `
     }
 
     }     
@@ -60,5 +60,5 @@ function calcular(){
 
     peso.value = " "
     altura.value = " "
-    resultado.innerHTML = "<span style= ` color: #fff; ` > Seu IMC é:</span>"
+    resultado.innerHTML = "<span style= ` color: #fff; ` >Seu IMC é:</span>"
 }
