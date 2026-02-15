@@ -58,7 +58,7 @@ function calcular(){
     const altura = document.getElementById("altura")
     const resultado = document.getElementById("resultado")
 
-    peso.value = ""
-    altura.value = ""
-    resultado.innerHTML = "Seu IMC é:"
+    peso.value = " "
+    altura.value = " "
+    resultado.innerHTML = "<span style= ` color: #fff; ` > Seu IMC é:</span>"
 }
