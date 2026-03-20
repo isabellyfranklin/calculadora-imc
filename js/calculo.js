@@ -1,3 +1,10 @@
+const trilho = document.getElementById("trilho")
+
+trilho.addEventListener(`click`, ()=>{
+    trilho.classList.toggle(`dark`)
+})
+
+
 function calcular(){
     const peso = document.getElementById("peso")
     const altura = document.getElementById("altura")
