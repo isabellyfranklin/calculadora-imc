@@ -19,6 +19,69 @@ body{
     align-items: center;
 }
 
+/*configuração do botão Dark e Light*/
+header{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.botaoDarkElight{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.trilho{
+    background-color: var(--cor-branca);
+    width: 150px;
+    height: 50px;
+    border-radius: 155px;
+   
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    width: 60px;
+    height: 45px;
+    background-color: var(--cor-preta);
+    margin: 2px 0px 0px 5px;
+    border-radius: 50%;
+    
+    position:absolute;
+    left: 0;
+    transition: .5s;
+  
+}
+
+.trilho.dark {
+    background-color: var(--cor-preta);
+}
+
+.trilho.dark .indicador{
+    left: 80px; /*vai jogar o botão para o lado*/
+    background-color: var(--cor-branca);
+}
+
+body.dark{
+    background-color:var(--cor-nude-claro);
+}
+
+body.dark h1{
+    color:var(--cor-azul-clara);
+}
+
+body.dark button{
+    border: 1px solid var(--cor-azul-clara);
+    background-color:var(--cor-azul-clara);;
+}
+
+body.dark output{
+    background-color: var(--cor-azul-clara);
+}
+
+/*configuração do botão Dark e Light*/
+
 h1{
     color:#1f30ca;
     margin: 15px;
