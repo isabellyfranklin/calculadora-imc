@@ -13,7 +13,7 @@
     --cor-nude-claro:#e5dede;
     --cor-branca:white;
     --cor-azul-escuro: #1f30ca;
-    --cor-azul-clara: #4e59bd;
+    --cor-azul-clara: #6387b7;
     --cor-cinza-escuro: rgb(46, 44, 44);
 }
 
@@ -26,7 +26,15 @@ body{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
     transition: .9s;
+}
+
+/*configuração do botão Dark e Light*/
+header{
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .botaoDarkElight{
@@ -58,7 +66,7 @@ body{
 }
 
 .trilho.dark {
-    background-color: var();
+    background-color: var(--cor-preta);
 }
 
 .trilho.dark .indicador{
@@ -67,8 +75,24 @@ body{
 }
 
 body.dark{
-    background-color:var(--cor-branca);
+    background-color:var(--cor-nude-claro);
 }
+
+body.dark h1{
+    color:var(--cor-azul-clara);
+}
+
+body.dark button{
+    border: 1px solid var(--cor-azul-clara);
+    background-color:var(--cor-azul-clara);;
+}
+
+body.dark output{
+    background-color: var(--cor-azul-clara);
+}
+
+/*configuração do botão Dark e Light*/
+
 
 h1{
     color:var(--cor-azul-escuro);
@@ -84,6 +108,8 @@ main{
     height: 550px;
     border-radius: 25px 25px 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+    
 }    
     
 
