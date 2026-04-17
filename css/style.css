@@ -107,31 +107,28 @@ main{
     width: 500px;
     height: 550px;
     border-radius: 25px 25px 25px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;  
+}     
 
-    
-}    
-    
-
-div.corpo-calc{
+.corpo-calc{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     margin-top: 50px;
 }
 
-div.campo{
+.campo{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    border: none;
 }
 
-div.campo label{
+.campo label{
     width: 150px;
     font-weight: bolder;
     margin-left: 35px;
 }
-
 
 input{
     margin: 15px;
@@ -151,7 +148,7 @@ input{
     border-radius: 20px ;
 }
 
-div.botoes{
+.botoes{
     display: flex;
     flex-flow: column;
     align-items: center;

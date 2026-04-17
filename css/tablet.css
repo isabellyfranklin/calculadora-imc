@@ -8,6 +8,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cor-preta:black;
+    --cor-nude-claro:#e5dede;
+    --cor-branca:white;
+    --cor-azul-escuro: #1f30ca;
+    --cor-azul-clara: #6387b7;
+    --cor-cinza-escuro: rgb(46, 44, 44);
+}
+
 body{
     background-color:black;
     font-family:"Open Sans", sans-serif; 
@@ -64,7 +73,7 @@ header{
 }
 
 body.dark{
-    background-color:var(--cor-nude-claro);
+    background-color: var(--cor-branca);
 }
 
 body.dark h1{
@@ -99,20 +108,21 @@ main{
 }    
     
 
-div.corpo-calc{
+.corpo-calc{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     margin-top: 50px;
 }
 
-div.campo{
+.campo{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    border: none;
 }
 
-div.campo label{
+.campo label{
     width: 150px;
     font-weight: bolder;
     margin-left: 35px;
@@ -137,7 +147,7 @@ input{
     border-radius: 20px ;
 }
 
-div.botoes{
+.botoes{
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -176,7 +186,6 @@ output{
     font-size: 30px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
 
 .letras-botoes{
     font-weight: bolder;

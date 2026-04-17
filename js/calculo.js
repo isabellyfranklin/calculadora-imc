@@ -7,8 +7,6 @@ trilho.addEventListener(`click`, ()=>{
 })
 
 
-
-
 function calcular(){
     const peso = document.getElementById("peso")
     const altura = document.getElementById("altura")
